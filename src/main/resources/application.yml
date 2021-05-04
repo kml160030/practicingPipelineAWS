@@ -1,0 +1,18 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: practiceAWS
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://rdspractice.cami6udfunfa.us-east-2.rds.amazonaws.com:5432/rdsPractice
+    username: rdspractice
+    password: practice
+#    driverClassName: org.postgresql.com.revature.Driver
+    driverClassName: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL82Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+#      default_schema: rdsPractice
